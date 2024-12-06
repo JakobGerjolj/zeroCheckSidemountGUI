@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "canhandler.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -17,7 +18,10 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    canHandler* m_CanHandler;
+
 private:
+    void setRawValue();
     Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H
