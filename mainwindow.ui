@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>490</width>
+    <width>575</width>
     <height>258</height>
    </rect>
   </property>
@@ -36,8 +36,8 @@
    <widget class="QLabel" name="RawValue">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>140</y>
+      <x>208</x>
+      <y>180</y>
       <width>231</width>
       <height>34</height>
      </rect>
@@ -55,8 +55,8 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>140</y>
+      <x>38</x>
+      <y>180</y>
       <width>147</width>
       <height>34</height>
      </rect>
@@ -74,8 +74,8 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>52</x>
-      <y>70</y>
+      <x>40</x>
+      <y>120</y>
       <width>82</width>
       <height>76</height>
      </rect>
@@ -93,8 +93,148 @@
    <widget class="QLabel" name="ZeroValue">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>70</y>
+      <x>128</x>
+      <y>120</y>
+      <width>82</width>
+      <height>76</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Inter SemiBold</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>80</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CONNECT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>279</x>
+      <y>80</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DISCONNECT</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Inter Light</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Single/left</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>100</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Inter Light</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>right</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>140</y>
+      <width>82</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Inter SemiBold</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ZERO:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RawValue_2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>180</y>
+      <width>231</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Inter SemiBold</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>180</y>
+      <width>147</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Inter SemiBold</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>RAW VALUE:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ZeroValue_2">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>120</y>
       <width>82</width>
       <height>76</height>
      </rect>
@@ -115,7 +255,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>490</width>
+     <width>575</width>
      <height>21</height>
     </rect>
    </property>

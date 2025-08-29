@@ -27,6 +27,7 @@ void canHandler::startCAN(){
     if (canDevice && canDevice->connectDevice()) {
         qDebug() << "Connected to CAN bus";
         connect(canDevice, &QCanBusDevice::framesReceived, this, &canHandler::readAndProcessCANpodatke);
+        isConnected = true;
     } else {
         qDebug() << "Failed to connect to CAN bus";
     }
@@ -55,6 +56,13 @@ void canHandler::readAndProcessCANpodatke()
             rawValue = (uint16_t)(rawByte1 | rawByte2 << 8);
             zeroValue = (uint8_t)frame.payload().at(4);
 
+
+            uint8_t rawByte1_RightLever = frame.payload()[5];
+            uint8_t rawByte2_RightLever = frame.payload()[6];
+
+            rawValueRight = (uint16_t)(rawByte1_RightLever | rawByte2_RightLever << 8);
+            zeroValueRight = (uint8_t)frame.payload().at(7);
+
             qDebug() << "byte1: "<<static_cast<uint8_t>(frame.payload()[2]);
             qDebug() << "byte2: "<<static_cast<uint8_t>(frame.payload()[3]);
 
@@ -71,5 +79,27 @@ uint16_t canHandler::getRawValue(){
 uint8_t canHandler::getZeroValue(){
 
     return zeroValue;
+
+}
+
+void canHandler::connectToCAN(){
+
+    if(isConnected) return;
+
+    if(canDevice->connectDevice()){
+
+        isConnected = true;
+
+    }
+
+
+}
+
+void canHandler::disconnectFromCAN(){
+
+    if(!isConnected) return;
+
+    canDevice->disconnectDevice();
+    isConnected = false;
 
 }

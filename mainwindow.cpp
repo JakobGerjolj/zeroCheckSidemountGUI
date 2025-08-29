@@ -25,5 +25,24 @@ void MainWindow::setRawValue(){
 
     ui -> RawValue -> setText(QString::number(m_CanHandler -> getRawValue()));
     ui -> ZeroValue -> setText(QString::number(m_CanHandler -> getZeroValue()));
+    ui -> ZeroValue_2 -> setText(QString::number(m_CanHandler -> getZeroValueRight()));
+    ui -> RawValue_2 -> setText(QString::number(m_CanHandler -> getRawValueRight()));
 
 }
+
+void MainWindow::on_pushButton_clicked() //Connect button
+{
+
+    m_CanHandler -> connectToCAN();
+
+}
+
+
+
+void MainWindow::on_pushButton_2_clicked() //Disconnect button
+{
+
+    m_CanHandler -> disconnectFromCAN();
+
+}
+

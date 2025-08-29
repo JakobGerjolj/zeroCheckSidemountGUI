@@ -20,6 +20,11 @@ public:
 
     canHandler* m_CanHandler;
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     void setRawValue();
     Ui::MainWindow *ui;
